@@ -1,0 +1,184 @@
+html {
+    font-family: 'Montserrat', sans-serif;
+    color: #595959;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px;
+    background-color: #F6F6FA;
+}
+
+h1 {
+    font-size: 50px;
+    line-height: normal;
+}
+
+h3 {
+    font-size: 22px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 14px;
+}
+
+a { 
+    white-space: pre-wrap;      /* CSS3 */   
+    white-space: -moz-pre-wrap; /* Firefox */   
+    white-space: -o-pre-wrap;   /* Opera 7 */    
+    word-wrap: break-word;      /* IE */
+ }
+
+.app-wrapper {
+    max-width: 1000px;
+    margin: 40px auto;
+    background-color: #ffffff;
+}
+
+.general-set-clas {
+    margin-top: 30px;
+}
+
+/* PROFILE SECTION */
+.profile {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.profile-image {
+    width: 220px;
+    margin: 50px 100px 0px 100px;
+}
+
+.profile div {
+    margin-top: 30px;
+}
+
+.profile h3 {
+    margin-top: 50px;
+    font-size: 22px;
+    font-weight: 400;
+}
+
+@media (max-width:767px), (max-width:812px) and (orientation:landscape) {
+    .profile {
+        display: block;
+        text-align: center;
+    }
+    .profile-image {
+        width: 120px;
+        margin: 20px 0px 0px 0px;
+    }
+
+    .profile div {
+        margin-top: 0px;
+    }
+
+    .profile h3 {
+        margin-top: 10px;
+        font-size: 18px;
+    }
+}
+/* /PROFILE SECTION */
+
+/* INFOTEXT SECTION */
+.InfoText-section {
+    display: flex;
+    padding: 25px;
+}
+
+@media (max-width:767px), (max-width:812px) and (orientation:landscape) {
+    .InfoText-section {
+        display: block;
+        padding: 10px;
+    }
+}
+
+/* /INFOTEXT SECTION */
+
+/* -----------LEFT SECTION */
+.left-section {
+    padding: 25px;
+}
+
+/* About me section */
+.title-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+}
+
+.title-bar::after {
+    content: "";
+    border-bottom: solid 2px;
+    width: calc(100% - 20px);
+    position: absolute;
+    margin: 40px 0 0 20px;
+}
+
+.title-bar > i {
+    margin: 0 10px 0 20px;
+}
+
+/* Contacts */
+.contacts-container {
+    margin: 20px 0 0 20px;
+}
+
+.contacts-container i {
+    margin-right: 10px;
+}
+.contacts-container a {
+    color: #595959;
+    font-weight: 600;
+}
+
+.contacts-container-address {
+    display: flex;
+}
+
+address {
+    font-style: normal;
+    margin-left: 5px;
+    font-weight: 600;
+}
+
+/* Languages */
+meter {
+    width: 200px;
+    height: 25px;
+}
+
+meter::-webkit-meter-bar {
+    background: none; /* Required to get rid of the default background property */
+    background-color: whiteSmoke;
+    box-shadow: 0 5px 5px -5px #333 inset;
+}
+meter::-webkit-meter-optimum-value {
+    box-shadow: 0 5px 5px -5px #999 inset;
+    background: currentColor;
+    background-size: 100% 100%;
+}
+
+/* -----------LEFT SECTION */
+
+
+/* -----------RIGHT SECTION */
+.right-section {
+    padding: 25px;
+}
+
+
+/* GENERAL SETTINGS */
+.grid {width: calc(100% - 50px); }
+.grid-box {float: left; } /* Daca le pui si astea doua, vei face vizibil gridul din spate : height: 10rem; background-color: rgb(111, 84, 125);*/
+.box-half {width: calc(50% - 50px);} 
+
+@media (max-width:767px) {
+    .grid-box {float: left;}
+    .box-half {width: calc(100% - 10px);}
+}
